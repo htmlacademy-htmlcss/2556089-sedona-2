@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Воронов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2556089).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 

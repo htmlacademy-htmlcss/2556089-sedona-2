@@ -40,8 +40,8 @@
       </nav>
     </header>
 
-    <main class="catalog-page">
-      <section class="catalog-page-filters">
+    <main class="catalog-page container-catalog ">
+           <section class="catalog-page-filters">
       <h1 class="catalog-page-title">Гостиницы Седоны</h1>
       <div class="catalog-nav">
         <ul class="breadcrumbs-list">
@@ -55,8 +55,10 @@
         </ul>
       </div>
 
+
           <h2 class="visually-hidden">Подбор гостиницы по нескольким параметрам</h2>
         <form class="page-filters" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="filters-container">
 
           <fieldset class="catalog-filters-group">
             <legend class="catalog-filters-title">Инфраструктура:</legend>
@@ -111,13 +113,14 @@
           <button class="button button-reset" type="reset">Сбросить</button>
         </form>
       </section>
+    </div>
 
       <section class="search-result">
-        <h2 class="search-result-title">Найдено гостиниц:
+        <div class="founded">
+          <h2 class="search-result-title">Найдено гостиниц:
           <span class="search-result-number">38</span>
         </h2>
-        <div class="filter-result">
-          <select class="select-control" aria-label="Сортировка">
+            <select class="select-control" aria-label="Сортировка">
             <option value="cheap-first">Сначала дешевые</option>
             <option value="popular-first">Сначала популярные</option>
             <option value="expensive-first">Сначала дорогие</option>
@@ -215,6 +218,7 @@
           </li>
         </ul>
 
+
         <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current" href="#">1</a>
@@ -237,7 +241,7 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -275,5 +279,4 @@
 
     </footer>
   </body>
-
 </html>

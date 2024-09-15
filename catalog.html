@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-page container-catalog">
+    <main class="catalog-page">
       <section class="catalog-page-filters">
         <h1 class="catalog-page-title">Гостиницы Седоны</h1>
         <div class="catalog-nav">
@@ -88,18 +88,23 @@
               </li>
               <li class="catalog-filters-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing-group" value="appart"
-                    id="appart">Аппаратаменты
+                  <input class="control-input" type="radio" name="housing-group" value="appart" id="appart">Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="catalog-filters-cost">
-            <legend class="catalog-filters-title">Стоимость,₽:></legend>
-            <label class="control-cost" for="from">От</label>
-            <input class="control-input" type="number" name="from" id="from" placeholder="0">
-            <label class="control-cost" for="to">До</label>
-            <input class="control-input" type="number" name="to" id="to" placeholder="9000">
+            <legend class="catalog-filters-title">Стоимость,₽:</legend>
+            <div class="container-filters-cost">
+              <div class="filter-from">
+                <label class="control-cost" for="from">От</label>
+                <input class="control-input control-input-min" type="number" name="from" id="from" placeholder="0">
+              </div>
+              <div class="filter-till">
+                <label class="control-cost" for="to">До</label>
+                <input class="control-input control-input-max" type="number" name="to" id="to" placeholder="9000">
+              </div>
+            </div>
             <input type="range" min="0" max="9000">
           </fieldset>
           <div class="wrap-filters-button">

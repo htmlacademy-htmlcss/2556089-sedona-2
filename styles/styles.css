@@ -61,14 +61,12 @@ body {
 .button {
   display: block;
   padding: 8px;
-
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: inherit;
-
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -101,7 +99,7 @@ body {
 }
 
 .filters-button-reset {
-  padding: 8px 50px;
+  padding: 8px 57px;
   background-color: transparent;
 }
 
@@ -117,7 +115,6 @@ body {
 .button-favorite-add {
   background-color: #7DB54F;
 }
-
 
 .button- .title {
   font-size: 30px;
@@ -145,7 +142,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 7px 0;
 }
 
 .reason-title-main {
@@ -260,47 +257,43 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 64px;
+
 }
 
-.container-item-dark {
+.reason-item {
+  display: flex;
+  background-color: #82B3D3;
+}
+
+.reason-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 112px 85px;
   flex-grow: 1;
 }
 
 .reason-item:nth-child(even) {
-  background: rgba(131, 179, 211, 0.12);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 112px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .reason-item:nth-child(odd) {
-  background: rgba(131, 179, 211, 0.2);
-  padding: 112px 85px;
-
+  background-color: rgba(131, 179, 211, 0.2);
 }
+
 
 .reason-item:first-child {
   background-color: #82B3D3;
   color: #FFFFFF;
-  display: flex;
-  padding: 0;
-  flex-grow: 1;
 }
 
 .reason-item:nth-child(5) {
-  display: flex;
   flex-direction: row-reverse;
+  flex-grow: 1;
   background-color: #82B3D3;
   color: #FFFFFF;
-  padding: 0;
-  flex-grow: 1;
-  margin-bottom: 64px;
 }
 
 .services-list {
@@ -393,6 +386,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 70px;
   background-color: #ffffff;
 }
 
@@ -407,10 +401,6 @@ body {
 .social-item {
   max-height: 40px;
   max-width: 48px;
-}
-
-.creator-logo-image {
-  margin-right: 70px;
 }
 
 .phone-number {
@@ -429,7 +419,7 @@ body {
 }
 
 .container-catalog {
-  max-width: 1060px;
+
   padding: 0 70px;
 }
 
@@ -438,9 +428,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 0;
   margin: 0;
   margin-bottom: 50px;
+  padding: 35px 70px 70px;
 }
 
 .control {
@@ -455,9 +445,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   text-align: left;
-  margin-top: 35px;
-  margin-bottom: 8px;
-
+  margin: 0 0 8px 0;
 }
 
 .catalog-nav {
@@ -486,17 +474,40 @@ body {
 .wrap-filters-button {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 .founded {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 70px;
 }
 
 .catalog-filters-cost {
-  max-width: 180px;
-  margin-right: 70px;
+  max-width: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 70px 0 0;
+}
+
+.container-filters-cost {
+  max-width: 287px;
+  display: flex;
+}
+
+.filter-from {
+  position: relative;
+  width: 50%;
+}
+
+.filter-till {
+  position: relative;
+  width: 50%;
 }
 
 .catalog-display-list {
@@ -535,6 +546,11 @@ body {
   line-height: 23px;
   text-align: left;
   list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.catalog-filters-item:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filters-list {
@@ -550,18 +566,24 @@ body {
   max-width: 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   border: 0;
   padding: 0;
   margin: 0 70px 0 0;
 }
 
+.catalog-filters-group:nth-child(2) {
+  margin-right: 140px;
+}
+
 .control-input {
+  max-width: 100%;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+  box-sizing: border-box;
   color: #000000;
 }
 
@@ -572,6 +594,8 @@ body {
   text-align: right;
   text-transform: lowercase;
   color: #000000;
+  position: absolute;
+  right: 12px;
 }
 
 .control-input-min {
@@ -633,12 +657,20 @@ body {
   align-self: center;
 }
 
+.search-result {
+  padding: 0 70px;
+}
+
 .search-result-title,
 .search-result-number {
   text-align: left;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+.search-result-title {
+  flex-grow: 1;
 }
 
 .select-control {

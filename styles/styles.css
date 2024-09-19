@@ -183,13 +183,11 @@ button:disabled {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
+  gap: 32px;
   margin: 0;
   padding: 0;
-}
-
-.navigation-item {
-  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -198,6 +196,32 @@ button:disabled {
   color: inherit;
   text-decoration: none;
   list-style-type: none;
+}
+
+.navigation-link-current {
+  position: relative;
+  padding: 20px 0;
+}
+
+.navigation-link-current::before {
+  content:'';
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-link:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.navigation-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-user {
@@ -608,11 +632,10 @@ button:disabled {
   margin-bottom: 40px;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-item:not(:first-child) {
   padding-left: 28px;
   position: relative;
 }
-
 
 .breadcrumbs-item:not(:first-child)::before {
   content: '';
@@ -635,14 +658,15 @@ button:disabled {
   line-height: 21px;
   text-decoration: none;
   display: block;
-  cursor: pointer;
+
 }
 
 .breadcrumbs-link:hover {
   color: #FFFFFF99;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus,
+.breadcrumbs-link:visited {
   color: #FFFFFF;
 }
 
@@ -883,6 +907,20 @@ button:disabled {
   justify-content: space-between;
 }
 
+.hotel-stars {
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  margin:0;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/star.svg");
+}
+
 .hotel-rating {
   margin: 0;
   padding: 8px 22px 9px 23px;
@@ -923,6 +961,23 @@ button:disabled {
   font-family: inherit;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-color: transparent;
+  position: relative;
+  /*webkit browsers */
+  -webkit-appearance: none;
+  /*Firefox */
+  -moz-appearance: none;
+  /* modern browsers */
+  appearance: none;
+}
+
+.select-control::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 7px;
+  background-color: tomato;
+  position: absolute;
 }
 
 .select-control:hover,

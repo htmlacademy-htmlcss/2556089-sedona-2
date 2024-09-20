@@ -210,14 +210,6 @@ body {
   background: #E5E5E5;
 }
 
-.button- .title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
 
 .title {
   font-size: 30px;
@@ -322,6 +314,11 @@ body {
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000000;
+}
+
+
+.search-link:hover {
+  background-color: tomato;
 }
 
 .likes-link {
@@ -888,8 +885,8 @@ body {
 
 .input-checkbox {
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background-color: #FFFFFF;
   border-radius: 4px;
   margin: 0 16px 0 0;
@@ -901,8 +898,10 @@ body {
   background-position: center;
 }
 
-.input-checkbox:focus {
-border: 3px solid #83B3D3
+.input-checkbox:focus,
+.input-checkbox:focus-visible{
+  border: 3px solid #83B3D3;
+  outline: 0;
 }
 
 .input-checkbox:active {
@@ -959,6 +958,7 @@ border: 3px solid #83B3D3
   box-sizing: border-box;
   color: #000000;
   border: none;
+  background-color: red;
 }
 
 .control-input::placeholder {
@@ -1073,7 +1073,9 @@ border: 3px solid #83B3D3
 }
 
 .select-control {
-    min-width: 292px;
+  position: relative;
+  z-index: 1;
+  min-width: 292px;
   padding: 14px 20px;
   font-size: 18px;
   font-weight: 400;
@@ -1099,11 +1101,11 @@ border: 3px solid #83B3D3
 .select-control-form::before {
   content: '';
   display: block;
-  width: 22px;
-  height: 17px;
+  width: 12px;
+  height: 7px;
   background-image:url("../images/arrow-down.svg");
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   right:21px;
 }
@@ -1173,32 +1175,21 @@ border: 3px solid #83B3D3
   align-content: center;
 }
 
-.pagination-link:hover:focus {
+.pagination-link:not(.pagination-current):hover,
+.pagination-link:not(.pagination-current):focus {
   background-color: rgba(104, 162, 202, 1);
   border: 1px solid rgba(130, 179, 211, 1);
 }
 
-.pagination-link:active {
+.pagination-link:not(.pagination-current):active {
   background: rgba(130, 179, 211, 1);
   color: #FFFFFF4D;
-
 }
 
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
   box-sizing: border-box;
-}
-
-.pagination-current:hover,
-.pagination-current:focus {
-  background-color: #f2f2f2;
-  border: none;
-}
-
-.pagination-current:active {
-  background-color: #f2f2f2;
-  border: none;
 }
 
 .pagination-link-between {

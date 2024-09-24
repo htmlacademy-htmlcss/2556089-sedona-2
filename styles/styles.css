@@ -1288,8 +1288,8 @@ body {
 
 .pagination-link:not(.pagination-current):hover,
 .pagination-link:not(.pagination-current):focus {
-  background-color: #82B3D3;
-  border: 1px solid #82B3D3;
+  background-color: #68A2CA;
+  border: 1px solid #68A2CA;
 }
 
 .pagination-link:not(.pagination-current):active {
@@ -1310,11 +1310,6 @@ body {
   background-color: inherit;
   box-sizing: border-box;
   color: #000000;
-}
-
-.pagination-link-between:hover {
-  background-color: inherit;
-  border: none;
 }
 
 .modal-container {

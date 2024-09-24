@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -105,7 +106,18 @@
                 <input class="control-cost-input control-input-max" type="number" name="to" id="to" placeholder="9000">
               </div>
             </div>
-            <input type="range" min="0" max="9000">
+            <div class="price-selection-range">
+              <div class="selection-sliders" style="left: 0; width: 226px;">
+                <button class="change-value-button value-min-button" type="button">
+                  <span class="visually-hidden">Изменить минимальную стоимость</span>
+                </button>
+                <button class="change-value-button value-max-button" type="button">
+                  <span class="visually-hidden">Изменить максимальную стоимость</span>
+                </button>
+              </div>
+              </div>
+
+
           </fieldset>
           <div class="wrap-filters-button">
             <button class="button filters-button-submit" type="submit">Применить</button>
@@ -149,7 +161,7 @@
                 src="images/catalog/amara-resort-spa.jpg" width="300" height="212"
                 alt="вид из пещеры на звездное небо"></a>
             <a class="hotel-link" href="#" tabindex="-1">
-              <h3 class="hotel-card-title subtitle">Amara resort and SPA</h3>
+              <h3 class="hotel-card-title subtitle">Amara Resort & Spa</h3>
             </a>
             <div class="hotel-info">
               <p class="hotel-type">Гостиница</p>
@@ -291,15 +303,15 @@
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link link-vk" href="https://vk.com/htmlacademy/">
-                <span class="visually-hidden">Вконтакте.</span></a>
+                <span class="visually-hidden">Ссылка на страницу Вконтакте.</span></a>
             </li>
             <li class="social-item">
               <a class="social-link link-telegram" href="https://t.me/htmlacademy/">
-                <span class="visually-hidden">Телеграм.</span></a>
+                <span class="visually-hidden">Ссылка на профиль Телеграм.</span></a>
             </li>
             <li class="social-item">
               <a class="social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru/">
-                <span class="visually-hidden">Ютуб.</span></a>
+                <span class="visually-hidden">Ссылка на канал Ютуб.</span></a>
             </li>
           </ul>
         </section>
@@ -308,6 +320,7 @@
           <a class="phone-number" href="tel:+78128121212">+7(812) 812-12-12</a>
         </section>
         <a class="creator-link" aria-label="Перейти на сайт Академии html" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Лого со ссылкой разрабочиков сайта</span>
         </a>
       </div>
     </footer>

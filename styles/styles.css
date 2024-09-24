@@ -83,12 +83,12 @@ body {
 }
 
 .button:active {
-  background: #756157;
+  background-color: #756157;
   color: #FFFFFF4D;
 }
 
 .button:disabled {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .button-header {
@@ -115,7 +115,7 @@ body {
 }
 
 .subscribe-button:disabled {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .search-button {
@@ -141,7 +141,7 @@ body {
 }
 
 .filters-button-submit:disabled {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .filters-button-reset {
@@ -184,7 +184,7 @@ body {
 }
 
 .button-favorite:disabled {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .button-favorite-add {
@@ -202,7 +202,7 @@ body {
 }
 
 .button-favorite-add:disabled {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .title {
@@ -519,7 +519,7 @@ body {
   height: 72px;
   position: absolute;
   background-image: url("../images/house.svg");
-  right: center;
+  background-position: center;
   top: 81px;
 }
 
@@ -531,7 +531,7 @@ body {
   position: absolute;
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
-  right: center;
+  background-position: center;
   top: 81px;
 }
 
@@ -544,12 +544,12 @@ body {
   background-image: url("../images/souvenir.svg");
   background-repeat: no-repeat;
   background-size: 64px 72px;
-  right: center;
+  background-position: center;
   top: 81px;
 }
 
 .services-item:nth-child(odd) {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .search {
@@ -572,13 +572,12 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("../images/blurry-mountain-view.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #B0C4DE;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  padding: 96px 258px 96px 258px;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscribe-form {
@@ -616,7 +615,7 @@ body {
   color: #FFFFFF;
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .input-email {
@@ -639,8 +638,9 @@ body {
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 40px 70px 30px 70px;
+  padding: 45px 70px 35px 70px;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -670,7 +670,7 @@ body {
 }
 
 .social-link:active {
-  background: rgba(104, 162, 202, 0.3);
+  background-color: rgba(104, 162, 202, 0.3);
 }
 
 .social-link.link-vk {
@@ -693,6 +693,7 @@ body {
   line-height: 40px;
   color: #000000;
   text-align: center;
+  padding: 5px 20px
 }
 
 .phone-number:hover,
@@ -778,7 +779,7 @@ body {
   mask-image: url("../images/arrow-right.svg");
   mask-repeat: no-repeat;
   mask-position: center;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   position: absolute;
   left: 10px;
   top: 50%;
@@ -1280,7 +1281,7 @@ body {
   height: 60px;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #82B3D3;
+  background-color: #82B3D3;
   text-align: center;
   align-content: center;
 }
@@ -1292,7 +1293,7 @@ body {
 }
 
 .pagination-link:not(.pagination-current):active {
-  background: #82B3D3;
+  background-color: #82B3D3;
   color: #FFFFFF4D;
 }
 
@@ -1317,7 +1318,7 @@ body {
 }
 
 .modal-container {
-  position: fixed;
+   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1394,7 +1395,7 @@ body {
 
 .modal-form-input:hover,
 .modal-form-input:focus {
-  background: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 .modal-report {
@@ -1517,7 +1518,7 @@ body {
   width: 100%;
   padding: 18px 20px;
   border-radius: 10px;
-  background: #83B3D3;
+  background-color: #83B3D3;
   font-size: 20px;
   line-height: 24px;
 }

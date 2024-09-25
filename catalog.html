@@ -98,11 +98,11 @@
             <div class="container-filters-cost">
               <div class="filter-from">
                 <label class="control-cost" for="from">От</label>
-                <input class="control-cost-input control-input-min" type="number" name="from" id="from" placeholder="0">
+                <input class="control-cost-input control-input-min" type="number" name="from" id="from" value="0" placeholder="0">
               </div>
               <div class="filter-till">
                 <label class="control-cost" for="to">До</label>
-                <input class="control-cost-input control-input-max" type="number" name="to" id="to" placeholder="9000">
+                <input class="control-cost-input control-input-max" type="number" name="to" id="to" value="9000" placeholder="9000">
               </div>
             </div>
             <div class="price-selection-range">
@@ -253,7 +253,7 @@
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-current">
-            <a class="pagination-link pagination-current" href="#">1</a>
+            <a class="pagination-link pagination-current" href="#" aria-current="page">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -265,7 +265,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link  pagination-link-between" href="#">...</a>
+            <a class="pagination-link  pagination-link-between">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -276,7 +276,7 @@
         <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="input-email" type="email" name="email-adress" placeholder="Ваш e-mail">
+          <input class="input-email" type="email" name="email-adress" placeholder="Ваш e-mail" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>

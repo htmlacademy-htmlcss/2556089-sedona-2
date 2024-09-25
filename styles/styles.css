@@ -158,8 +158,13 @@ body {
 }
 
 .filters-button-reset:hover {
+background-color: transparent;
+opacity: 0.6;
+}
+
+.filters-button-reset:focus {
   background-color: transparent;
-  opacity: 0.6;
+  color: #FFFFFF;
 }
 
 .filters-button-reset:active {
@@ -960,6 +965,7 @@ visited,
   text-align: left;
   display: flex;
   align-items: center;
+
 }
 
 .input-checkbox {
@@ -969,6 +975,7 @@ visited,
   background-color: #FFFFFF;
   border-radius: 4px;
   margin: 0 16px 0 0;
+  cursor: pointer;
 }
 
 .input-checkbox:checked {
@@ -984,6 +991,7 @@ visited,
   background-color: #FFFFFF;
   border-radius: 50%;
   margin: 0 16px 0 0;
+  cursor: pointer;
 }
 
 .input-radio:checked {
@@ -1013,6 +1021,11 @@ visited,
 
 .control:active {
   opacity: 0.3;
+}
+
+.control:has(.control-input:disabled) {
+  opacity: 30%;
+  pointer-events: none;
 }
 
 .control-cost-input {
@@ -1045,6 +1058,7 @@ visited,
 
 .control-cost-input::placeholder {
   color: #000000;
+  opacity: 0.3;
 }
 
 .control-cost {
@@ -1307,14 +1321,18 @@ visited,
   align-content: center;
 }
 
+.pagination-link:not(.pagination-current):not(.pagination-link-between) {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
 .pagination-link:not(.pagination-current):hover,
 .pagination-link:not(.pagination-current):focus {
   background-color: #68A2CA;
   border: 1px solid #68A2CA;
-}
+  }
 
-.pagination-link:not(.pagination-current):active {
-  background-color: #82B3D3;
+  .pagination-link:not(.pagination-current):active {
   color: #FFFFFF4D;
 }
 
@@ -1328,9 +1346,15 @@ visited,
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  background-color: inherit;
   box-sizing: border-box;
   color: #000000;
+  background-color: #FFFFFF;
+  pointer-events: none;
+
+}
+
+.pagination-link-between:focus {
+  background-color: #FFFFFF;
 }
 
 .modal-container {
@@ -1420,10 +1444,15 @@ visited,
   cursor: pointer;
 }
 
+.modal-form-input::placeholder {
+  color: #000000;
+}
+
 .modal-form-input:hover,
 .modal-form-input:focus {
   background-color: #E6E6E6;
 }
+
 
 .modal-report {
   font-family: inherit;
@@ -1489,9 +1518,16 @@ visited,
   border: none;
   position: relative;
   background-color: #F2F2F2;
-  border-radius: 4px;
   cursor: pointer;
 }
+
+.button-quantity-minus {
+  border-radius: 4px 0 0 4px;
+  }
+
+  .button-quantity-plus {
+    border-radius: 0 4px 4px 0;
+    }
 
 .button-quantity::before {
   content: '';
@@ -1532,7 +1568,7 @@ visited,
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 20px;
   background-color: #F2F2F2;
   text-align: center;
 }

@@ -801,9 +801,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  text-decoration: none;
   display: block;
-
+  text-decoration: none;
+  color: inherit;
 }
 
 .breadcrumbs-link:hover {
@@ -818,6 +818,8 @@ body {
 .breadcrumbs-link:active {
   color: #FFFFFF4D;
 }
+
+visited,
 
 .link-home {
   display: block;
@@ -1015,7 +1017,6 @@ body {
 
 .control-cost-input {
   max-width: 100%;
-  padding: 12px 20px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1023,8 +1024,10 @@ body {
   text-align: left;
   box-sizing: border-box;
   color: #000000;
+  padding: 12px 40px 12px 20px;
   border: none;
   background-color: #F2F2F2;
+  cursor: pointer;
 }
 
 .control-cost-input::-webkit-outer-spin-button,
@@ -1160,8 +1163,8 @@ body {
   background-position-x: -72px;
 }
 
-  .three-stars {
-    background-position-x: -48px;
+.three-stars {
+  background-position-x: -48px;
 }
 
 .four-stars {

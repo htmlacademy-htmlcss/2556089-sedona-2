@@ -263,6 +263,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 464px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -305,6 +306,7 @@ body {
 }
 
 .navigation-user {
+  max-width: 370px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -734,6 +736,7 @@ body {
 }
 
 .phone-number {
+  max-width: 720px;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -1089,6 +1092,7 @@ visited,
 
 .control-cost-input[type=number] {
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 .control-cost-input:hover {
@@ -1356,7 +1360,7 @@ visited,
   text-decoration: none;
   display: block;
   min-width: 60px;
-  height: 60px;
+  min-height: 60px;
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #82B3D3;
@@ -1639,6 +1643,7 @@ background-color: #E6E6E6;
 .modal-search-button:focus {
   background-color: #68A2CA;
 }
+
 
 .modal-tooltip {
   display: block;

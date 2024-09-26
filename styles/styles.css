@@ -1218,6 +1218,7 @@ visited,
 .hotel-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: start;
 }
 
 .hotel-quality {
@@ -1411,7 +1412,6 @@ visited,
   color: #000000;
   background-color: #FFFFFF;
   pointer-events: none;
-
 }
 
 .pagination-link-between:focus {

@@ -1087,6 +1087,10 @@ visited,
   appearance: none;
 }
 
+.control-cost-input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .control-cost-input:hover {
   background-color: #E6E6E6;
 }
@@ -1610,11 +1614,16 @@ visited,
   line-height: 20px;
   background-color: #F2F2F2;
   text-align: center;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+.quantity-input:hover {
+background-color: #E6E6E6;
 }
 
 .modal-search-button {

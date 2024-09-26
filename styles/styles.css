@@ -1597,7 +1597,7 @@ visited,
 }
 
 .button-quantity:hover,
-.quantity-button:focus {
+.button-quantity:focus {
   opacity: 1;
 }
 

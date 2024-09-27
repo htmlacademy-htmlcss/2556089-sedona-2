@@ -872,8 +872,6 @@ body {
   color: #FFFFFF4D;
 }
 
-visited,
-
 .link-home {
   display: block;
   width: 21px;
@@ -882,6 +880,19 @@ visited,
   mask-repeat: no-repeat;
   mask-position: left;
   background-color: #FFFFFF;
+}
+
+.link-home:hover {
+  background-color: #FFFFFF99;
+}
+
+.link-home:focus,
+.link-home:visited {
+  background-color: #FFFFFF;
+}
+
+.link-home:active {
+  background-color: #FFFFFF4D;
 }
 
 .page-filters {

@@ -874,11 +874,11 @@ body {
 
 .link-home {
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 13px;
+  height: 15px;
   mask-image: url("../images/home.svg");
   mask-repeat: no-repeat;
-  mask-position: left;
+  mask-position: center;
   background-color: #FFFFFF;
 }
 
@@ -925,7 +925,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-left: auto;
+  margin-left: 70px;
   border: none;
 }
 
@@ -1074,6 +1074,7 @@ body {
   justify-content: start;
   border: 0;
   padding: 0;
+  margin:0;
 }
 
 .control:hover {
